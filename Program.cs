@@ -48,6 +48,8 @@ namespace CalculatorProgram
                 Console.WriteLine("\ta - Add");
                 Console.WriteLine("\ts - Subtract");
                 Console.WriteLine("\tm - Multiply");
+                Console.Write("Your option? ");
+                Console.Write("Your option? ");
                 Console.WriteLine("\td - Divide");
                 Console.Write("Your option? ");
 
@@ -59,18 +61,22 @@ namespace CalculatorProgram
                     if (double.IsNaN(result))
                     {
                         Console.WriteLine("This operation will result in a mathematical error.\n");
+                        Console.Write("Your option? ");
                     }
                     else Console.WriteLine("Your result: {0:0.##}\n", result);
+                    Console.Write("Your option? ");
                 }
                 catch (Exception e)
                 {
                     Console.WriteLine("Oh no! An exception occurred trying to do the math.\n - Details: " + e.Message);
+                    Console.Write("Your option? ");
                 }
 
                 Console.WriteLine("------------------------\n");
 
                 // Wait for the user to respond before closing.
                 Console.Write("Press 'n' and Enter to close the app, or press any other key and Enter to continue: ");
+                Console.Write("Your option? ");
                 if (Console.ReadLine() == "n") endApp = true;
 
                 Console.WriteLine("\n"); // Friendly linespacing.
