@@ -76,6 +76,9 @@ namespace CalculatorProgram
 
                 // Wait for the user to respond before closing.
                 Console.Write("Press 'n' and Enter to close the app, or press any other key and Enter to continue: ");
+                Console.Write("Press 'n' and Enter to close the app, or press any other key and Enter to continue: ");
+                Console.Write("Press 'n' and Enter to close the app, or press any other key and Enter to continue: ");
+                Console.Write("Press 'n' and Enter to close the app, or press any other key and Enter to continue: ");
                 Console.Write("Your option? ");
                 if (Console.ReadLine() == "n") endApp = true;
 
